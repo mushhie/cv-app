@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me — Amal Basirah</title>
+  <link rel="manifest" href="../manifest.json" />
+  <meta name="theme-color" content="#FADADD" />
+  <link rel="icon" href="../images/icon-circle.png" /> //this
+  <link rel="stylesheet" href="../Style/stylesheet.css" />
+</head>
+<body class="page-about">
+  <header>
+    <a class="logo" href="index.html">
+      <img src="../images/icon-circle.png" alt="Logo" />
+      <span>My CV</span>
+    </a>
+    <nav>
+      <button class="menu-btn" aria-label="Menu">☰</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">About Me</h1>
+
+    <section class="card">
+      <h2>Personal Information</h2>
+      <div data-js="personal-info"></div>
+    </section>
+
+    <section class="card">
+      <h2>Background</h2>
+      <p>
+        Hi, I'm <strong>Amal Basirah</strong>! I'm an IT student from Bandar Seri Begawan, Brunei.
+        I love turning ideas into things you can actually click, tap, and play with — whether
+        that's a website, a mobile app, or a tiny IoT gadget on my desk.
+      </p>
+      <p style="margin-top:8px;">
+        Outside of class, you'll usually find me sketching UI ideas, watching design tutorials,
+        dancing with my club, or tinkering with sensors and code until something works
+        (or beautifully fails 🙃).
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Education</h2>
+      <h3>IBTE — Institute of Brunei Technical Education</h3>
+      <p>HNTec / Diploma in Information Technology — (Jul 2025 – June 2027 ) Present</p>
+
+      <h3>Cosmopolitan College of Commerce &amp; Technology</h3>
+      <p>Diploma in Information Technology — (Oct 2023 - Mar 2025)</p>
+
+      <h3>Sekolah Ugama Arab Menengah Perempuan Raja Isteri Pengiran Anak Hajah Saleha (SUAMPRIPAHS)</h3>
+      <p>'O' Level Qualification - (2018 - 2022)</p>
+
+      <h3>Sekolah Perempuan Arab Bandar Seri Begawan (SPABSB)</h3>
+      <p>PSR Qualification - (2016 - 2017)</p>
+    </section>
+
+    <section class="card">
+      <h2>Languages I Speak</h2>
+      <div data-js="languages"></div>
+    </section>
+
+    <section class="card">
+      <h2>Personal Interests</h2>
+      <ul class="bullets">
+        <li>🎨 UI / UX design &amp; digital art</li>
+        <li>💃 Dancing &amp; stage performing</li>
+        <li>🌱 IoT &amp; smart home tinkering</li>
+        <li>📚 Reading sci-fi and learning new tech</li>
+        <li>🎧 Lo-fi playlists on repeat while coding</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Hobbies Gallery</h2>
+      <p style="margin-bottom:12px; color:var(--brown-soft);">
+        Hover (or tap) a tile to see a little note 💫
+      </p>
+      <div class="gallery" data-js="hobbies"></div>
+    </section>
+  </main>
+
+  <footer>© <span id="yr"></span> Amal Basirah — Mobile CV PWA</footer>
+  <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+  <script src="../javascript/app.js"></script>
+</body>
+</html>

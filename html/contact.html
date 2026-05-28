@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Amal Basirah</title>
+  <link rel="manifest" href="../manifest.json" />
+  <meta name="theme-color" content="#FADADD" />
+  <link rel="icon" href="../images/icon-circle.png" />
+  <link rel="stylesheet" href="../Style/stylesheet.css" />
+</head>
+<body class="page-contact">
+  <header>
+    <a class="logo" href="index.html">
+      <img src="../images/icon-circle.png" alt="Logo" />
+      <span>My CV</span>
+    </a>
+    <nav>
+      <button class="menu-btn" aria-label="Menu">☰</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Contact</h1>
+
+    <section class="card">
+      <h2>Get in Touch</h2>
+      <ul class="contact-list">
+        <li>📧 <a href="mailto:malbsrh2412@gmail.com">malbsrh2412@gmail.com</a>
+          <button class="copy-btn" data-copy="malbsrh2412@gmail.com" aria-label="Copy personal email">📋</button>
+        </li>
+        <li>🎓 <a href="https://outlook.office.com/mail/deeplink/compose?to=25070893H@student.edu.bn" target="_blank" rel="noopener">25070893H@student.edu.bn</a>
+          <button class="copy-btn" data-copy="25070893H@student.edu.bn" aria-label="Copy student email">📋</button>
+        </li>
+        <li>📱 <a href="tel:+6738876389">+673 887 6389</a></li>
+        <li>📍 Bandar Seri Begawan, Brunei Darussalam</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>📍 Find Me — Home</h2>
+      <p style="margin-bottom:10px;">
+        No 317, Spg 373, Block C4, Flat MDPMAMB, Mukim Gadong B,
+        Bandar Seri Begawan, BE3719
+      </p>
+      <div class="map-wrap">
+        <iframe
+          title="Home address map"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=114.9298%2C4.8931%2C114.9498%2C4.9131&amp;layer=mapnik&amp;marker=4.9031%2C114.9398"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <p class="map-link">
+        <a href="https://www.openstreetmap.org/?mlat=4.9031&amp;mlon=114.9398#map=16/4.9031/114.9398"
+           target="_blank" rel="noopener">View larger map →</a>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>🏫 Find Me — School (IBTE)</h2>
+      <p style="margin-bottom:10px;">
+        Spg. 125, Jalan Muara, Bandar Seri Begawan, BB2313
+      </p>
+      <div class="map-wrap">
+        <iframe
+          title="School address map"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=114.9434%2C4.9678%2C114.9634%2C4.9878&amp;layer=mapnik&amp;marker=4.9778%2C114.9534"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <p class="map-link">
+        <a href="https://www.openstreetmap.org/?mlat=4.9778&amp;mlon=114.9534#map=16/4.9778/114.9534"
+           target="_blank" rel="noopener">View larger map →</a>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Social Media</h2>
+      <div class="socials">
+        <a href="https://wa.me/6738876389" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://instagram.com/mushforgortartz" target="_blank" rel="noopener">Instagram</a>
+        <a href="mailto:malbsrh2412@gmail.com">Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="yr"></span> Amal Basirah — Mobile CV PWA</footer>
+  <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+  <script src="../javascript/app.js"></script>
+</body>
+</html>

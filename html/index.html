@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amal Basirah — Mobile CV</title>
+  <link rel="manifest" href="../manifest.json" />
+  <meta name="theme-color" content="#FADADD" />
+  <link rel="icon" href="../images/icon-circle.png" /> 
+  <link rel="apple-touch-icon" href="../images/icon-circle.png" /> 
+  <link rel="stylesheet" href="../Style/stylesheet.css" />
+</head>
+<body class="page-home">
+  <header>
+    <a class="logo" href="index.html">
+      <img src="../images/icon-circle.png" alt="Logo" />
+      <span>My CV</span>
+    </a>
+    <nav>
+      <button class="menu-btn" aria-label="Menu">☰</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-deco deco-1"></div>
+      <div class="hero-deco deco-2"></div>
+      <img class="profile" src="../images/cv-profile.jpeg" alt="Amal Basirah profile photo" />
+      <h1 data-js="name">Amal Basirah</h1>
+      <p class="role" data-js="role">IT Student @ IBTE</p>
+      <p data-js="tagline">✨ Welcome to my interactive mobile CV! ✨</p>
+      <p style="margin-top:16px;">
+        <a class="btn" href="aboutme.html">About me</a>
+        <a class="btn yellow" href="contact.html">Contact</a>
+      </p>
+    </section>
+
+    <section class="card" style="margin-top:18px;">
+      <h2>Quick Intro</h2>
+      <p>
+        I'm an IT student at <strong>IBTE</strong> currently in my second semester,
+        passionate about web development and creating user-friendly digital experiences.
+        I'm actively seeking an internship opportunity where I can apply my skills
+        and learn from industry professionals.
+      </p>
+    </section>
+
+    <section class="card stats-card">
+      <h2>At a Glance</h2>
+      <div class="stats">
+        <div class="stat"><span class="stat-num">2</span><span class="stat-lbl">Semesters</span></div>
+        <div class="stat"><span class="stat-num">5+</span><span class="stat-lbl">Skills</span></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-lbl">Languages</span></div>
+        <div class="stat"><span class="stat-num">∞</span><span class="stat-lbl">Curiosity</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>What I'm Looking For</h2>
+      <ul class="bullets">
+        <li>🌱 An internship in web development or IT support</li>
+        <li>💡 A team that encourages learning and creativity</li>
+        <li>🤝 Real-world projects I can contribute to</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>© <span id="yr"></span> Amal Basirah — Mobile CV PWA</footer>
+  <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+  <script src="../javascript/app.js"></script>
+</body>
+</html>

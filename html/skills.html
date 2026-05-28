@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills &amp; Experience — Amal Basirah</title>
+  <link rel="manifest" href="../manifest.json" />
+  <meta name="theme-color" content="#FADADD" />
+  <link rel="icon" href="../images/icon-circle.png" />
+  <link rel="stylesheet" href="../Style/stylesheet.css" />
+</head>
+<body class="page-skills">
+  <header>
+    <a class="logo" href="index.html">
+      <img src="../images/icon-circle.png" alt="Logo" />
+      <span>My CV</span>
+    </a>
+    <nav>
+      <button class="menu-btn" aria-label="Menu">☰</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Skills &amp; Experience</h1>
+
+    <section class="card">
+      <h2>Technical Skills</h2>
+      <div data-js="tech-skills"></div>
+    </section>
+
+    <section class="card">
+      <h2>Soft Skills</h2>
+      <div class="chips" data-js="soft-skills"></div>
+    </section>
+
+    <section class="card">
+      <h2>Tools I Use</h2>
+      <p style="margin-bottom:8px; color:var(--brown-soft); font-size:0.9rem;">
+        Hover/Click any tool to see how I use it ✨
+      </p>
+      <div class="chips" data-js="tools"></div>
+    </section>
+
+    <section class="card">
+      <h2>Work / Project Experience</h2>
+      <div data-js="experiences"></div>
+    </section>
+
+    <section class="card">
+      <h2>Achievements &amp; Certificates</h2>
+      <div class="timeline" data-js="achievements"></div>
+    </section>
+  </main>
+
+  <footer>© <span id="yr"></span> Amal Basirah — Mobile CV PWA</footer>
+  <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+  <script src="../javascript/app.js"></script>
+</body>
+</html>

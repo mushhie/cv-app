@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Amal Basirah</title>
+  <link rel="manifest" href="../manifest.json" />
+  <meta name="theme-color" content="#FADADD" />
+  <link rel="icon" href="../images/icon-circle.png" />
+  <link rel="stylesheet" href="../Style/stylesheet.css" />
+</head>
+<body class="page-portfolio">
+  <header>
+    <a class="logo" href="index.html">
+      <img src="../images/icon-circle.png" alt="Logo" />
+      <span>My CV</span>
+    </a>
+    <nav>
+      <button class="menu-btn" aria-label="Menu">☰</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Projects / Portfolio</h1>
+    <p style="text-align:center; margin-bottom:18px;">
+      A selection of things I've built and tinkered with.
+    </p>
+
+    <!-- ===== Featured: IoT Carousel ===== -->
+    <section class="card carousel-card">
+      <h2>🌿 Featured: Smart Home Monitor (IoT)</h2>
+      <p style="margin-bottom:14px;">
+        An all-in-one IoT prototype
+        <strong>5 different sensors</strong>.<br> Swipe through the modules below!
+      </p>
+
+      <div class="carousel" data-js="carousel">
+        <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
+        <div class="carousel-track" data-js="carousel-track"></div>
+        <button class="carousel-btn next" aria-label="Next slide">›</button>
+      </div>
+      <div class="carousel-dots" data-js="carousel-dots"></div>
+    </section>
+
+    <!-- ===== Other projects grid ===== -->
+    <h2 class="page-subtitle">Other Projects</h2>
+    <div class="projects" data-js="projects"></div>
+  </main>
+
+  <footer>© <span id="yr"></span> Amal Basirah — Mobile CV PWA</footer>
+  <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+  <script src="../javascript/app.js"></script>
+</body>
+</html>
